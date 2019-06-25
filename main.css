@@ -1,0 +1,345 @@
+/* CHOKO BRAND COLORS */
+
+html {
+    --chokog: #22e08a;
+    --chokob: #1a1a1a;
+    --chokolb: #272727;
+    --chokoW: #f1f1f1;
+    --chokof: #d4e3e7;
+}
+
+/* Main CSS */
+
+body{
+ margin: 0px;
+ padding: 0px;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-kerning: normal;
+}
+
+.newslinktext{
+    margin: 0px;
+    padding: 0px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+
+}
+
+h1{
+    margin: 0px;
+    padding: 0px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--chokob);
+    font-kerning: normal;
+    text-decoration: none;
+}
+
+h2{
+    margin: 0px;
+    padding: 0px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--chokog);
+    font-kerning: normal;
+    text-decoration: none;
+}
+
+hr{
+    color: var(--chokog);
+    fill: none;
+}
+
+.maingrid{
+ background: var(--chokob);
+ display: grid;
+ grid-template-columns:  25px auto 25px;
+ grid-template-rows: 50px auto 150px;
+ background: var(--chokob);
+}
+
+.mainmenu{
+ grid-row: 1/1;
+ grid-column: 1/-1;
+ background: rgba(0, 0, 0, 0.822);
+
+ display: grid;
+ grid-template-columns: 50px auto 10px;
+ align-items: center;
+
+ font-family: futura-pt,sans-serif;
+ font-weight: 300;
+ font-style: normal;
+ z-index: 1;
+
+ position: fixed;
+  top: 0;
+width: 100%;
+}
+
+.menuicon{
+    
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: start;
+margin-top: 6px;
+margin-left: 12px;
+transform: scale(0.8);
+}
+
+.hello{
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    color: var(--chokog);
+    font-style: normal;
+}
+
+/* Socialbuttons */
+
+.socialicons{
+    grid-column: 2/2;
+    justify-self: end;
+    color: var(--chokoW);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#menuicon{
+position: relative;
+top: 18%;
+font-size: 12px;
+}
+
+.socialbutton{
+    height: 25px;
+    width: 25px;
+    background-color: var(--chokob);
+    border-radius: 100%;
+    text-align: center;
+    padding: 0px;
+    margin-right: 5px;
+    border: 2px solid var(--chokog);
+}
+
+
+/* MainContentGrid */
+
+.maincontensections{
+    grid-column: 1/-1;
+    background-color: red;
+    width: 100%;
+    display: grid;
+}
+
+
+/* SpotlightSection ------------------------------------------------- */
+    .spotlight{
+    background-image: url(/assets/images/spotlight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 500px;
+    align-items: center;  
+    }
+
+    .coversection{
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 200px 1fr;
+    background-color: rgb(244, 247, 248);
+    justify-self: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    }
+
+    .coverimage{
+    height: 100%;
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(/assets/images/spotlight.jpg);
+    border-right: 2px solid var(--chokog);
+    }
+
+
+    .covertext{
+     color: var(--chokolb);
+     font-family: futura-pt, sans-serif;
+     padding: 25px 50px 10px 50px;
+    }
+
+    .coversongtitle{
+     font-size: 50px;
+     font-weight: 700;
+     margin: -5px;
+    }
+
+    .coversongauthor{
+        font-size: 13px;
+    }
+
+    .coversongtext{
+        font-size: 18px;
+    }
+
+ /* BUTTONs */
+
+    .spotlightbuttons{
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .callbutton{
+        width: 50px;
+        padding: 5px;
+        border-radius: 5px;
+        background: rgb(255, 255, 255);
+        text-align: center;
+        border: 1px solid rgb(228, 228, 228);
+        margin-right: 5px;
+        box-shadow: 0px 2px 3px rgba(139, 139, 139, 0.219);
+    }
+
+    .callbutton:hover{
+        box-shadow: 0px 0px 0px rgba(139, 139, 139, 0.219);
+    }
+
+/* HeaderSection ------------------------------------------------- */
+
+.headersection{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 500px 1fr;
+    max-height: 500px;
+}
+
+.newsboxone{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-image: url("/assets/images/newstest.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-rows: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.newsboxtwo{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-image: url("/assets/images/newstest2.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-rows: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.newsboxthree{
+    height: 100%;
+    display: grid;
+    background-image: url("/assets/images/newstest3.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-rows: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.colorblockblue{
+    grid-row: 1/-1;
+    display: flex;
+    background-image: linear-gradient( -180deg,  #ffffff00, #000000);
+}
+
+.newslinktext{
+    align-self: end;
+    width: 100%;
+    grid-row: 2;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 20px;
+    border-right: 5px solid var(--chokog);
+}
+
+.linktext{
+    text-decoration: underline;
+}
+
+.headernewsone{
+ background-color: black;
+}
+
+
+/* Introduction Section -----------------------------------------------------------*/
+
+.topborder{
+    border-top: 1px solid rgb(192, 192, 192);
+    height: 50px;
+}
+
+.introductionSection{
+    justify-self: center;
+    max-width: 1200px;
+}
+
+.horizontalcontentscroll{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contentcard {
+    box-shadow: 0px 2px 3px rgba(139, 139, 139, 0.411);
+    width: 300px;
+    height: 200px;
+}
+
+.videoimageone{
+    background: red;
+    
+}
+
+.contentcardheroimg{
+
+}
+
+/* Footer -----------------------------------------------------------*/
+
+.footer{
+    grid-row: 4/4;
+    grid-column: 1/-1;
+    background-color: var(--chokolb);
+    display: grid;
+    align-self: end;
+    grid-template-columns: 50px auto auto auto 50px;
+    grid-template-rows: 50px 100px;
+}
