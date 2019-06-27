@@ -1,0 +1,39 @@
+@media (max-width: 1282px) 
+{ 
+
+ .contentsection{
+        justify-self: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+
+@media (max-width: 968px) 
+{ 
+
+ .contentsection{
+        justify-self: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr ;
+}
+
+}
+
+
+
+@media (max-width: 666px) 
+{ 
+
+ .contentsection{
+        justify-self: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr;
+}
+
+}
+
+

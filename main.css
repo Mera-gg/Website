@@ -97,6 +97,7 @@ width: 100%;
 margin-top: 6px;
 margin-left: 12px;
 transform: scale(0.8);
+
 }
 
 .hello{
@@ -131,7 +132,7 @@ font-size: 12px;
     text-align: center;
     padding: 0px;
     margin-right: 5px;
-    border: 2px solid var(--chokog);
+    border: 2px solid var(--chokoW);
 }
 
 
@@ -155,17 +156,17 @@ font-size: 12px;
     -o-background-size: cover;
     background-size: cover;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
     height: 500px;
-    align-items: center;  
     }
 
     .coversection{
+    height: 200px;
     display: grid;
-    grid-column: 2;
     grid-template-columns: 200px 1fr;
+    width: 500px;
     background-color: rgb(244, 247, 248);
-    justify-self: center;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.507);
     border-radius: 10px;
     }
@@ -310,17 +311,26 @@ font-size: 12px;
     justify-self: center;
     display: grid;
     grid-gap: 25px;
-    grid-auto-flow: column ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.contentcardhead{
+    margin-bottom: 10px;
+}
 
 .contentcard {
     width: 300px;
     height: 200px;
+    margin-top: 25px;
+}
+
+.contentmeta > i {
+    font-size: 5px;
 }
 
 .contentimage{
     height: 100%;
+    filter: grayscale(100%);
     background-position: center;
     background-repeat: no-repeat;
     grid-template-rows: auto;
@@ -329,8 +339,22 @@ font-size: 12px;
     -o-background-size: cover;
     background-size: cover;
     display: grid;
+    align-items: flex-end;
+    justify-items: end;
     box-shadow: 0px 2px 3px rgba(139, 139, 139, 0.411);
 
+}
+
+.contentimage:hover{
+    filter: grayscale(20%);
+    transition: 0.25s;
+    transition-timing-function: ease-out;
+}
+
+.contentimage:{
+    filter: grayscale(0%);
+    transition: 0.25s;
+    transition-timing-function: ease-out;
 }
 
 #latestvideoimage{
@@ -338,13 +362,14 @@ font-size: 12px;
 }
 
 .contentmeta{
-    align-self: flex-end;
-    justify-self: flex-end;
+    width: 100%;
+    text-align: center;
     color: white;
     font-family: futura;
     font-weight: 100;
-    background: red;
-    padding: 20px;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0))
 }
 
 /* Footer -----------------------------------------------------------*/
@@ -357,3 +382,5 @@ font-size: 12px;
     grid-template-columns: 50px auto auto auto 50px;
     grid-template-rows: 50px 100px;
 }
+
+
