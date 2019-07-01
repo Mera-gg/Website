@@ -355,7 +355,7 @@ font-size: 12px;
     transition-timing-function: ease-out;
 }
 
-#latestvideoimage{
+#contentcardcoverone{
     background-image: url("/assets/images/newstest2.jpg") ;
 }
 
@@ -385,8 +385,57 @@ font-size: 12px;
 /* About Section -----------------------------------------------------------*/
 
 .aboutsection{
-    height: 350px;
+    min-height: 350px;
+    display: grid;
     background-color: var(--chokog);
+}
+
+.aboutgrid{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ max-width: 1250px;
+ width: 100%;
+ justify-self: center;
+ overflow: hidden;
+}
+
+.aboutpicture{
+    grid-row: 1/-1;
+    background-image: url(/assets/images/demoface.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aboutheadline{
+    margin: 0px;
+    padding: 0px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    font-style: normal;
+    color: white;
+    font-kerning: normal;
+    text-decoration: none;
+    grid-column: 2;
+    align-self: end;
+    padding-left: 25px;
+}
+
+.aboutcopy{
+    margin: 0px;
+    padding: 0px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-kerning: normal;
+    text-decoration: none;
+    grid-column: 2;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    align-self: flex-start;
 }
 
 /* Footer -----------------------------------------------------------*/
