@@ -3,7 +3,7 @@
 html {
     --chokog: #22e08a;
     --chokob: #1a1a1a;
-    --chokolb: #272727;
+    --chokolb: #1f1f1f;
     --chokoW: #f1f1f1;
     --chokof: #d4e3e7;
 }
@@ -73,7 +73,7 @@ hr{
 .mainmenu{
  grid-row: 1/1;
  grid-column: 1/-1;
- background: rgba(0, 0, 0, 0.822);
+ background: rgba(0, 0, 0, 0.37);
 
  display: grid;
  grid-template-columns: 50px auto 10px;
@@ -313,25 +313,21 @@ font-size: 12px;
     justify-self: center;
     display: grid;
     grid-gap: 25px;
+    margin: 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .contentcardhead{
-    margin-bottom: 10px;
 }
 
 .contentcard {
     width: 300px;
     height: 200px;
-    margin-top: 25px;
-}
-
-.contentmeta > i {
-    font-size: 5px;
 }
 
 .contentimage{
     height: 100%;
+    border-radius: 5px;
     filter: grayscale(100%);
     background-position: center;
     background-repeat: no-repeat;
@@ -365,27 +361,37 @@ font-size: 12px;
 
 .contentmeta{
     width: 100%;
-    text-align: center;
+    border-radius: 5px;
+    text-align: end;
     color: white;
     font-family: futura;
     font-weight: 100;
-    padding-bottom: 15px;
-    padding-top: 50px;
+    padding-bottom: 25px;
     background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0))
+}
+
+.contentmeta p{
+    margin-right: 25px;
+}
+
+#contenticon{
+    font-size: 18px;
+    color: white;
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin: 25px;
 }
 
 /* About Section -----------------------------------------------------------*/
 
 .aboutsection{
-    height: 300px;
+    height: 350px;
     background-color: var(--chokog);
 }
 
 /* Footer -----------------------------------------------------------*/
 
 .footer{
-    grid-row: 4/4;
-    grid-column: 1/-1;
     background-color: var(--chokolb);
     display: grid;    
     grid-template-columns: 50px auto auto auto 50px;
