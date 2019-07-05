@@ -35,19 +35,24 @@
     .aboutpicture {
         grid-row: 1/-1;
         grid-column: 1/-1;
-        background-color: black;
     }
 
     .aboutheadline {
-        grid-column: 1/-1;
         text-align: center;
         margin-top: 25px;
+        margin: 0px;
     }
 
     .aboutcopy {
-        grid-column: 1/-1;
         text-align: center;
+        margin: 0px;
+    }
 
+    .abouttext{
+        grid-column: 1/-1;
+        align-self: flex-end;
+        grid-row: 2/3;
+        border: 1px solid var(--chokotg);
     }
 
     .coverimage {
@@ -64,6 +69,7 @@
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.507);
         border-radius: 10px;
         color: white;
+        border: 1px solid var(--chokotg);
     }
 
     .coverimage {

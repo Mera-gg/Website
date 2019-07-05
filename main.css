@@ -2,6 +2,7 @@
 
 html {
     --chokog: #22e08a;
+    --chokotg: #22e08a69;
     --chokob: #1a1a1a;
     --chokolb: #1f1f1f;
     --chokoW: #f1f1f1;
@@ -41,7 +42,7 @@ h1{
     font-family: futura-pt, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: var(--chokob);
+    color: var(--chokof);
     font-kerning: normal;
     text-decoration: none;
 }
@@ -387,7 +388,8 @@ font-size: 12px;
 .aboutsection{
     min-height: 350px;
     display: grid;
-    background-color: var(--chokog);
+    background-image: url(/assets/images/backgroundabout.jpg);
+    background-color: var(--chokob);
 }
 
 .aboutgrid{
@@ -401,15 +403,16 @@ font-size: 12px;
 }
 
 .aboutpicture{
-    grid-row: 1/-1;
+    grid-row: 1/3;
     background-image: url(/assets/images/demoface.png);
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
 
 }
 
 .aboutheadline{
     margin: 0px;
+    margin-right: 25px;
     padding: 0px;
     font-family: futura-pt, sans-serif;
     font-weight: 700;
@@ -421,12 +424,14 @@ font-size: 12px;
     grid-column: 2;
     align-self: end;
     padding-left: 25px;
-    padding-bottom: 25px;
+    padding-top: 25px;
+    
 }
 
 .aboutcopy{
     margin: 0px;
     padding: 0px;
+    margin-right: 25px;
     font-family: futura-pt, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -438,6 +443,22 @@ font-size: 12px;
     padding-right: 25px;
     padding-bottom: 25px;
     align-self: flex-start;
+}
+
+.abouttext{
+    grid-column: 2/-1;
+    align-self: center;
+    grid-row: 1/3;
+    border: 1px solid var(--chokog);
+    border-radius: 5px;
+    margin: 25px;
+    background: #000000a6;
+}
+
+.devider{
+    padding: 25px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    text-align: center;
 }
 
 /* Footer -----------------------------------------------------------*/
