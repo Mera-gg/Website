@@ -80,11 +80,9 @@ hr{
  grid-row: 1/1;
  grid-column: 1/-1;
  background: rgba(0, 0, 0, 0.37);
-
  display: grid;
  grid-template-columns: 50px auto 10px;
  align-items: center;
-
  font-family: futura-pt,sans-serif;
  font-weight: 300;
  font-style: normal;
@@ -469,7 +467,13 @@ font-size: 12px;
 }
 
 .deviderprefooter{
-    background-color: var(--chokog);
+    background-image: url(/assets/images/studio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 25px;
     height: 300px;
 }
