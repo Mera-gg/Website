@@ -26,6 +26,10 @@ p{
     font-kerning: normal;
 }
 
+a{
+    text-decoration: none;
+}
+
 .newslinktext{
     margin: 0px;
     padding: 0px;
@@ -42,9 +46,10 @@ h1{
     font-family: futura-pt, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: var(--chokof);
+    color: var(--chokob);
     font-kerning: normal;
     text-decoration: none;
+    font-size: 18px;
 }
 
 h2{
@@ -329,7 +334,7 @@ font-size: 12px;
 .contentimage{
     height: 100%;
     border-radius: 5px;
-    filter: grayscale(100%);
+    filter: grayscale(70%);
     background-position: center;
     background-repeat: no-repeat;
     grid-template-rows: auto;
@@ -337,6 +342,7 @@ font-size: 12px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    transition: 0.25s;
     display: grid;
     align-items: flex-end;
     justify-items: end;
@@ -345,7 +351,7 @@ font-size: 12px;
 }
 
 .contentimage:hover{
-    filter: grayscale(20%);
+    filter: grayscale(0%);
     transition: 0.25s;
     transition-timing-function: ease-out;
 }
@@ -458,8 +464,88 @@ font-size: 12px;
 .devider{
     padding: 25px;
     border-bottom: 1px solid rgb(219, 219, 219);
+    border-top: 1px solid rgb(219, 219, 219);
     text-align: center;
 }
+
+.deviderprefooter{
+    background-color: var(--chokog);
+    padding: 25px;
+    height: 300px;
+}
+
+/* Gearsection -----------------------------------------------------------*/
+
+.gearsection{
+    display: grid;
+    grid-gap: 25px;
+    grid-column: 1fr 1fr;
+    max-width: 1200px;
+    justify-items: start;
+    justify-self: center;
+    margin-bottom: 25px;
+}
+
+.leftgeargrid{
+    grid-column: 1;
+}
+
+.rightgeargrid{
+    grid-column: 2;
+}
+
+.gearitem{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.gearimage{
+    grid-column: 1;
+    height: 50px;
+    width: 50px;
+    height: 100%;
+    transform: scale(0.5);
+}
+
+.geartext{
+    align-self: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-kerning: normal;
+    padding-left: 25px;
+}
+
+.gearlink{
+    color: var(--chokof);
+    font-size: 18px;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.gridtitle{
+    text-align: center;
+    justify-self: center;
+    grid-column: 1/-1;
+    margin: 0px;
+    padding: 0px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-kerning: normal;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+
 
 /* Footer -----------------------------------------------------------*/
 

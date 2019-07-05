@@ -86,6 +86,7 @@
 
     .covertext {
         color: white;
+        padding: 25px 25px 10px 25px;
     }
 
     .coversongtitle {
@@ -99,5 +100,33 @@
     .coversongtext {
         color: white;
     }
+
+    .gearsection{
+        display: grid;
+        grid-row: 1fr 1fr;
+        max-width: 1200px;
+        justify-items: start;
+        justify-self: center;
+    }
+
+    .leftgeargrid{
+        grid-row: 1;
+        grid-column: 1/2;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .rightgeargrid{
+        grid-row: 2;
+        grid-column: 1/2;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .gearsection{
+        grid-gap: 0px;
+    }
+    
+    
 
 }
