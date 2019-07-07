@@ -134,5 +134,86 @@
     .gearsection{
         grid-gap: 0px;
     }
+
+    .coversection {
+        animation-duration: 1s;
+        animation-name: scrollanimation;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes scrollanimation {
+        from {
+            transform: translateY(200px);
+            opacity: 0.5;
+        }
+      
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+    
+        }
+      }
+    
+      .covertext {
+        animation-duration: 0.6s;
+        animation-name: coverslidein;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-delay: 0.8s;
+      }
+      
+      @keyframes coverslidein {
+        from {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+      
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+    
+        }
+      }
+    
+      .scrollbutton{
+        animation-duration: 2s;
+        animation-name: scrollanimation;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+     
+      @keyframes scrollanimation {
+        from {
+            transform: translateY(0px);
+            opacity: 0.1;
+        }
+      
+        to {
+            transform: translateY(-50px);
+            opacity: 1;
+    
+        }
+      }
+      
+      .spotlight{
+        animation-duration: 2s;
+        animation-name: spotlightzoom;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+     
+      @keyframes spotlightzoom {
+        from {
+          background-size: 105%;
+        }
+      
+        to {
+          background-size: 100%; 
+        }
+      }
+    
+      
     
 }

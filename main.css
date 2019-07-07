@@ -345,6 +345,7 @@ font-size: 12px;
     align-self: flex-start;
     justify-self: flex-end;
     margin: 25px;
+    box-shadow: -2px -1px 14px 0px rgba(0,0,0,0.75);
 }
 
 
@@ -484,6 +485,10 @@ font-size: 12px;
     align-items: center;
     height: 100%;
 
+}
+
+.gearlink:hover{
+    color: var(--chokog);
 }
 
 .gridtitle{
