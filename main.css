@@ -79,7 +79,7 @@ hr{
 .mainmenu{
  grid-row: 1/1;
  grid-column: 1/-1;
- background: rgba(0, 0, 0, 0.37);
+ background: rgba(0, 0, 0, 0.692);
  display: grid;
  grid-template-columns: 50px auto 10px;
  align-items: center;
@@ -136,7 +136,7 @@ font-size: 12px;
     text-align: center;
     padding: 0px;
     margin-right: 5px;
-    border: 2px solid var(--chokoW);
+    border: 1px solid var(--chokog);
 }
 
 
@@ -144,7 +144,6 @@ font-size: 12px;
 
 .maincontensections{
     grid-column: 1/-1;
-    background-color: red;
     width: 100%;
     display: grid;
 }
@@ -155,15 +154,17 @@ font-size: 12px;
     background-image: url(/assets/images/spotlighttwo.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     display: grid;
     justify-items: center;
     align-items: center;
-    height: 500px;
+    height: 80vh;
+    overflow: hidden;
+    background-color: black;
+    grid-template-rows: 1fr 1fr;
+    
     }
+    
 
     .coversection{
     height: 200px;
@@ -173,6 +174,9 @@ font-size: 12px;
     background-color: rgb(244, 247, 248);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.507);
     border-radius: 10px;
+    grid-row: 1/-1;
+    opacity: 0;
+    margin-top: 100px;
     }
 
     .coverimage{
@@ -183,14 +187,17 @@ font-size: 12px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(/assets/images/spotlighttwo.jpg);
-    border-right: 2px solid var(--chokog);
+    border-right: 2px solid var(--chokog);   
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
     }
 
 
     .covertext{
      color: var(--chokolb);
      font-family: futura-pt, sans-serif;
-     padding: 25px 50px 10px 50px;
+     padding: 25px;
+     opacity: 0;
     }
 
     .coversongtitle{
@@ -205,6 +212,12 @@ font-size: 12px;
 
     .coversongtext{
         font-size: 18px;
+    }
+
+    .scrollbutton{
+        align-self: flex-end;
+        border-radius: 25px;
+        margin-bottom: 25px;
     }
 
  /* BUTTONs */
@@ -230,82 +243,6 @@ font-size: 12px;
         box-shadow: 0px 0px 0px rgba(139, 139, 139, 0.219);
     }
 
-/* HeaderSection ------------------------------------------------- */
-
-.headersection{
-    background-color: red;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 500px 1fr;
-    max-height: 500px;
-}
-
-.newsboxone{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    background-image: url("/assets/images/newstest.jpg") ;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-rows: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.newsboxtwo{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    background-image: url("/assets/images/newstest2.jpg") ;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-rows: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-}
-
-.newsboxthree{
-    height: 100%;
-    display: grid;
-    background-image: url("/assets/images/newstest3.jpg") ;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-rows: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.colorblockblue{
-    grid-row: 1/-1;
-    display: flex;
-    background-image: linear-gradient( -180deg,  #ffffff00, #000000);
-}
-
-.newslinktext{
-    align-self: end;
-    width: 100%;
-    grid-row: 2;
-    background-color: rgba(0, 0, 0, 0.507);
-    padding: 20px;
-    border-right: 5px solid var(--chokog);
-}
-
-.linktext{
-    text-decoration: underline;
-}
-
-.headernewsone{
- background-color: black;
-}
-
-
 /* Content Section -----------------------------------------------------------*/
 
 .topborder{
@@ -322,6 +259,7 @@ font-size: 12px;
 }
 
 .contentcardhead{
+
 }
 
 .contentcard {
@@ -332,18 +270,13 @@ font-size: 12px;
 .contentimage{
     height: 100%;
     border-radius: 5px;
-    filter: grayscale(70%);
+    filter: grayscale(80%);
     background-position: center;
     background-repeat: no-repeat;
     grid-template-rows: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     transition: 0.25s;
     display: grid;
-    align-items: flex-end;
-    justify-items: end;
     box-shadow: 0px 2px 3px rgba(139, 139, 139, 0.411);
 
 }
@@ -361,22 +294,49 @@ font-size: 12px;
 }
 
 #contentcardcoverone{
-    background-image: url("/assets/images/newstest2.jpg") ;
+    background-image: url("/assets/images/contentcards/peak.jpg") ;
+    transition: 1s;
 }
+
+#contentcardcovertwo{
+    background-image: url("/assets/images/contentcards/sub37.jpg") ;
+    transition: 1s;
+}
+
+#contentcardcoverthree{
+    background-image: url("/assets/images/contentcards/zoom.jpg") ;
+    transition: 1s;
+}
+
+#contentcardcoverfour{
+    background-image: url("/assets/images/contentcards/max4.jpg") ;
+    transition: 1s;
+}
+
+
 
 .contentmeta{
     width: 100%;
-    border-radius: 5px;
-    text-align: end;
-    color: white;
+    border-radius: 10px;
     font-family: futura;
     font-weight: 100;
-    padding-bottom: 25px;
     background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0))
 }
 
-.contentmeta p{
-    margin-right: 25px;
+.contentbutton{
+    background: rgba(0, 0, 0, 0.527);
+    border-radius: 10px;
+    color: var(--chokof);
+    padding: 20px;
+    width: 230px;
+    text-align: center;
+    border: 1px solid var(--chokog);
+}
+
+.contentmeta{
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 #contenticon{
@@ -386,6 +346,8 @@ font-size: 12px;
     justify-self: flex-end;
     margin: 25px;
 }
+
+
 
 /* About Section -----------------------------------------------------------*/
 
@@ -464,18 +426,7 @@ font-size: 12px;
     border-bottom: 1px solid rgb(219, 219, 219);
     border-top: 1px solid rgb(219, 219, 219);
     text-align: center;
-}
-
-.deviderprefooter{
-    background-image: url(/assets/images/studio.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 25px;
-    height: 300px;
+    
 }
 
 /* Gearsection -----------------------------------------------------------*/
@@ -552,6 +503,30 @@ font-size: 12px;
 
 
 /* Footer -----------------------------------------------------------*/
+
+
+#prefooterdevider{
+    padding: 10px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    border-top: 1px solid rgb(219, 219, 219);
+    text-align: center;
+    background: var(--chokog);
+}
+
+#prefooterdevider h1{
+    color: white;
+}
+
+.deviderprefooter{
+    background-image: url(/assets/images/studio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+}
 
 .footer{
     background-color: var(--chokolb);

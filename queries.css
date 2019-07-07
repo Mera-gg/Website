@@ -18,6 +18,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .spotlight{
+        background-image: url(/assets/images/spotlightmobile.jpg);
+    }
+
 }
 
 
@@ -59,6 +63,10 @@
         display: none;
     }
 
+
+    .spotlight{
+        background-image: url(/assets/images/spotlightmobile.jpg);
+    }
 
     .coversection {
         height: 200px;
@@ -127,6 +135,4 @@
         grid-gap: 0px;
     }
     
-    
-
 }
