@@ -536,8 +536,24 @@ font-size: 12px;
 .footer{
     background-color: var(--chokolb);
     display: grid;    
-    grid-template-columns: 50px auto auto auto 50px;
-    grid-template-rows: 50px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 150px;
+
+}
+
+.footergrid{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    padding: 25px;
+    max-width: 900px;
+    justify-self: end;
+}
+
+.footergridtwo{
+    grid-column: 3/4;
+    grid-row: 1/-1;
+    padding: 25px;
+    max-width: 900px;
 }
 
 
